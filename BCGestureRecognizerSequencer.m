@@ -1,7 +1,7 @@
 //
 //  BCGestureRecognizerSequencer.m
 //
-//  Created by Bartosz Ciechanowski on 09.07.2013.
+//  Created by Bartosz Ciechanowski on 11.07.2013.
 //  Copyright (c) 2013 Bartosz Ciechanowski. All rights reserved.
 //
 
@@ -71,9 +71,15 @@
 
 #pragma mark - Timer management
 
-- (void)startTimeoutTimer
+- (void)startTimeoutTimerForStep:(NSUInteger)step
 {
-    if (self.stepInterval == HUGE_VAL) {
+    NSTimeInterval interval = self.stepInterval;
+    
+    if ([self.delegate respondsToSelector:@selector(gestureRecognizerSequencer:intervalBeforeStep:)]) {
+        interval = [self.delegate gestureRecognizerSequencer:self intervalBeforeStep:step];
+    }
+    
+    if (interval == HUGE_VAL) {
         return;
     }
     
@@ -136,7 +142,7 @@
         if (self.recognizedSteps == self.gestureRecognizers.count) {
             [self reset];
         } else {
-            [self startTimeoutTimer];
+            [self startTimeoutTimerForStep:self.recognizedSteps];
         }
     }
 }

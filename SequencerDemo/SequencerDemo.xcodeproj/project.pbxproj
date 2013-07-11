@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9802940A178F4A3000670BD7 /* BCGestureRecognizerSequencer.m in Sources */ = {isa = PBXBuildFile; fileRef = 98029409178F4A3000670BD7 /* BCGestureRecognizerSequencer.m */; };
+		9802940D178F604400670BD7 /* BCGestureRecognizerSequencer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9802940C178F604400670BD7 /* BCGestureRecognizerSequencer.m */; };
 		9838BCBA178F413300591456 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9838BCB9178F413300591456 /* UIKit.framework */; };
 		9838BCBC178F413300591456 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9838BCBB178F413300591456 /* Foundation.framework */; };
 		9838BCBE178F413300591456 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9838BCBD178F413300591456 /* CoreGraphics.framework */; };
@@ -19,8 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		98029408178F4A3000670BD7 /* BCGestureRecognizerSequencer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCGestureRecognizerSequencer.h; sourceTree = "<group>"; };
-		98029409178F4A3000670BD7 /* BCGestureRecognizerSequencer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCGestureRecognizerSequencer.m; sourceTree = "<group>"; };
+		9802940B178F604400670BD7 /* BCGestureRecognizerSequencer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BCGestureRecognizerSequencer.h; path = ../../BCGestureRecognizerSequencer.h; sourceTree = "<group>"; };
+		9802940C178F604400670BD7 /* BCGestureRecognizerSequencer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BCGestureRecognizerSequencer.m; path = ../../BCGestureRecognizerSequencer.m; sourceTree = "<group>"; };
 		9838BCB6178F413300591456 /* SequencerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SequencerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9838BCB9178F413300591456 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9838BCBB178F413300591456 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -80,8 +80,8 @@
 		9838BCBF178F413300591456 /* SequencerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				98029408178F4A3000670BD7 /* BCGestureRecognizerSequencer.h */,
-				98029409178F4A3000670BD7 /* BCGestureRecognizerSequencer.m */,
+				9802940B178F604400670BD7 /* BCGestureRecognizerSequencer.h */,
+				9802940C178F604400670BD7 /* BCGestureRecognizerSequencer.m */,
 				9838BCC8178F413300591456 /* AppDelegate.h */,
 				9838BCC9178F413300591456 /* AppDelegate.m */,
 				9838BCD1178F413300591456 /* ViewController.h */,
@@ -169,7 +169,7 @@
 				9838BCC6178F413300591456 /* main.m in Sources */,
 				9838BCCA178F413300591456 /* AppDelegate.m in Sources */,
 				9838BCD3178F413300591456 /* ViewController.m in Sources */,
-				9802940A178F4A3000670BD7 /* BCGestureRecognizerSequencer.m in Sources */,
+				9802940D178F604400670BD7 /* BCGestureRecognizerSequencer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
