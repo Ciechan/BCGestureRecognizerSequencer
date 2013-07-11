@@ -1,7 +1,9 @@
 BCGestureRecognizerSequencer
 ==========
 
-BCGestureRecognizerSequencer provides a simple way to detect gestures sequences, like left swipe followed by right swipe or tap followed by long press. BCGestureRecognizerSequencer has a notion of step interval - maximum elapsed time between consecutive gesture recognition. It provides delegate methods for sequence steps recognitions, timeouts and cancelation - see the header file for details.
+BCGestureRecognizerSequencer provides a simple way to detect sequence of gestures, like left swipe followed by right swipe or tap followed by long press.
+
+BCGestureRecognizerSequencer has a notion of step interval - maximum elapsed time between consecutive gesture recognition. It provides delegate methods for sequence steps recognitions, timeouts and cancelation - see the header file for details, or checkout the demo project.
 
 ## How To Use
 
@@ -14,7 +16,7 @@ Just drag BCGestureRecognizerSequencer.h and BCGestureRecognizerSequencer.m to y
 
 - Setup some gesture recognizers
 
-```
+```objective-c
     UISwipeGestureRecognizer *rightSwipeRecognizer = [[UISwipeGestureRecognizer alloc] init];
     UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] init];
     NSArray *gestureRecognizers = @[rightSwipeRecognizer, tapRecognizer];
@@ -25,7 +27,7 @@ Just drag BCGestureRecognizerSequencer.h and BCGestureRecognizerSequencer.m to y
 
 - Create a strong reference to sequencer
 
-```
+```objective-c
 @property (nonatomic, strong) BCGestureRecognizerSequencer *sequencer;
 ```
 
@@ -33,13 +35,13 @@ Just drag BCGestureRecognizerSequencer.h and BCGestureRecognizerSequencer.m to y
 
 - Create sequencer instance
 
-```
+```objective-c
     self.sequencer = [[BCGestureRecognizerSequencer alloc] initWithGestureRecognizers:gestureRecognizers];
     self.sequencer.delegate = self;
 ```
 - Implement some optional delegate methods (you probably want some of them)
 
-```
+```objective-c
 - (void)gestureRecognizerSequencer:(BCGestureRecognizerSequencer *)sequencer didRecognizeSequenceStep:(NSUInteger)step
 {
 	if (step == sequencer.gestureRecognizers.count - 1) {
