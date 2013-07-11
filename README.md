@@ -45,9 +45,9 @@ Just drag BCGestureRecognizerSequencer.h and BCGestureRecognizerSequencer.m to y
 - (void)gestureRecognizerSequencer:(BCGestureRecognizerSequencer *)sequencer didRecognizeSequenceStep:(NSUInteger)step
 {
 	if (step == sequencer.gestureRecognizers.count - 1) {
-        NSLog(@"Entire sequence!);
+        NSLog(@"Entire sequence!");
     } else {
-        NSLog(@"Work in progress!);
+        NSLog(@"Work in progress!");
     }
 }
 ```
